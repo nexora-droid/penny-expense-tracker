@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --base: #24273a;
+    --mantle: #1e2030;
+    --crust: #181926;
+    --surface0: #363a4f;
+    --surface1: #494d64;
+    --surface2: #5b6078;
+    --overlay0: #6e738d;
+    --overlay1: #8087a2;
+    --overlay2: #939ab7;
+    --subtext0: #a5adcb;
+    --subtext1: #b8c0e0;
+    --text: #cad3f5;
+    --rosewater: #f4dbd6;
+    --flamingo: #f0c6c6;
+    --pink: #f5bde6;
+    --mauve: #c6a0f6;
+    --red: #ed8796;
+    --maroon: #ee99a0;
+    --peach: #f5a97f;
+    --yellow: #eed49f;
+    --green: #a6da95;
+    --teal: #8bd5ca;
+    --sky: #8bd5ca;
+    --sapphire: #7dc4e4;
+    --blue: #8aadf4;
+    --lavender: #b7bdf8;
+}
+
+@font-face {
+    font-family: 'Zarathustra';
+    src: url('/public//fonts/zarathustra-v01.otf') format('opentype');
+}
+
+body {
+    background: var(--base);
+    margin: 0px;
+}
+
+/* nav {
+    background: var(--mantle);
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: 'Nunito';
+    font-weight: bolder;
+    color: var(--text);
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+} */
+
+#nav {
+    font-family: 'Inter';
+    font-weight: bolder;
+    color: var(--blue);
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#quickstart {
+    background-color: var(--blue);
+    border: 2px solid var(--mantle);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Inter';
+    font-weight: bolder;
+    padding: 10px 20px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#quickstart:hover {
+    transform: scale(1.2);
+}
+
+#hero {
+    display: flex;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+#hero-title {
+    color: var(--blue);
+    font-size: 45px;
+    font-family: 'Zarathustra';
+    width: fit-content;
+}
+
+#hero-title span {
+    color: var(--flamingo);
+    font-style: italic;
+    text-decoration: underline wavy;
+}
+
+#hero-right img {
+    position: absolute;
+    left: 56%;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    transform-origin: right bottom;
+}
+
+#hr-img1 {
+    rotate: 5deg;
+    z-index: 3;
+}
+#hr-img2 {
+    rotate: 0deg;
+    z-index: 4;
+}
+#hr-img3 {
+    rotate: -5deg;
+    z-index: 5;
+}
