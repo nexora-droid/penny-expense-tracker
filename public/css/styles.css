@@ -115,16 +115,52 @@ body {
     border-radius: 20px;
     transform-origin: right bottom;
 }
-
+@media (min-width: 600px) {
+    #hero-right img {
+        position: absolute;
+        left: 56%;
+        width: auto;
+        height: 490px;
+        border-radius: 20px;
+        transform-origin: right bottom;
+    }
+}
 #hr-img1 {
-    rotate: 5deg;
-    z-index: 3;
+    transform: translateX(-100px);
+    width: 50%;
+    transition: all 3s ease;
 }
 #hr-img2 {
-    rotate: 0deg;
-    z-index: 4;
+    transition: all 3s ease;
 }
 #hr-img3 {
-    rotate: -5deg;
-    z-index: 5;
+    transform: translateX(100px);
+    transition: all 3s ease;
+}
+body:has(#hr-img1:hover) #hr-img2 {
+    transform: translateX(500px);
+}
+body:has(#hr-img1:hover) #hr-img3 {
+    transform: translateX(500px);
+}
+body:has(#hr-img2:hover) #hr-img1 {
+    transform: translateX(500px);
+}
+body:has(#hr-img2:hover) #hr-img3 {
+    transform: translateX(500px);
+}
+body:has(#hr-img3:hover) #hr-img1 {
+    transform: translateX(500px);
+}
+body:has(#hr-img3:hover) #hr-img2 {
+    transform: translateX(500px);
+}
+#hr-img1:hover {
+    transform: translateX(-100px);
+}
+#hr-img2:hover {
+    transform: translateX(-100px);
+}
+#hr-img3:hover {
+    transform: translateX(-100px);
 }
